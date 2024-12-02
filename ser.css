@@ -1,0 +1,284 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page section.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.page section.toggle {
+    background-color: #f8f9fa;
+}
+
+.page section.header .logog h4 {
+    margin: 10px 10px;
+}
+
+.page section.header .nav {
+    height: 20px;
+}
+
+.page section.header .nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.page section.header .nav ul li {
+    margin: 0px 10px;
+}
+
+.page section.header .nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.page section.header .icon {
+    margin: 0px 12px;
+}
+
+.page section.toggle i.toggle {
+    display: none;
+}
+
+.page section.header .icon i.shop,
+.page section.header .icon i.heart {
+    position: relative;
+    cursor: pointer;
+}
+
+.page section.header .icon span.shop {
+    position: absolute;
+    background-color: red;
+    padding: 4px;
+    border-radius: 10px;
+    color: white;
+    width: 20;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4px;
+    right: 123px;
+}
+
+.page section.header .icon a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.page section.header .icon i.shop,
+.page section.header .icon i.heart {
+    position: relative;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    .page section.header .nav {
+        height: 20px;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        left: -1000px;
+        right: 0;
+        top: 90px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #ddd;
+        transition: 2s;
+        z-index: 1000;
+        height: 100vh;
+    }
+    .page section.header .nav.active {
+        left: 0;
+        z-index: 1000;
+    }
+    .page section.header .nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        line-height: 3;
+        width: 100%;
+    }
+    .page section.header .nav ul li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .page section.header .nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .page section.header .icon {
+        margin: 0px 12px;
+    }
+    .page section.toggle i.toggle {
+        display: block;
+        margin: 0px 10px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .page section.header .icon i.shop,
+    .page section.header .icon i.heart {
+        position: relative;
+    }
+    .page section.header .icon span.shop {
+        position: absolute;
+        background-color: red;
+        padding: 4px;
+        border-radius: 10px;
+        color: white;
+        width: 20;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 4px;
+        right: 160px;
+    }
+    .page section.header .icon i.shop,
+    .page section.header .icon i.heart {
+        position: relative;
+        background-color: red;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+    }
+    .page section.header .icon span.heart {
+        position: absolute;
+        background-color: red;
+        padding: 4px;
+        border-radius: 10px;
+        color: white;
+        width: 20;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 4px;
+        right: 124px;
+    }
+    .page section.header .icon a {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 0px 20px;
+        text-decoration: none;
+    }
+}
+
+
+/* start ser */
+
+section.ser {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+section.ser .continer {
+    text-align: center;
+    font-weight: bold;
+}
+
+section.ser .continer .image {
+    margin: 10px auto;
+    text-align: center;
+}
+
+section.ser .continer .image img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+section.ser .content .box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* end ser */
+
+
+/* start footer */
+
+.footer {
+    background-color: black;
+    min-height: 50vh;
+    padding: 40px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer .box li a {
+    color: white;
+    list-style-type: none;
+    transition: 0.3s;
+}
+
+.footer .box li a:hover {
+    color: #2196f3;
+}
+
+.footer .box i {
+    font-size: 25px;
+    margin-right: 4px;
+    margin-left: 5px;
+}
+
+.footer .box img {
+    max-width: 25%;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    border-radius: 10px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.footer .box img:hover {
+    transform: scale(1.2);
+}
+
+.footer .box {
+    line-height: 2;
+}
+
+.footer .box li {
+    list-style-type: none;
+    border-bottom: solid 1px #777;
+}
+
+.footer .box li a i {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+
+/* end footer */
+
+
+/* end footer */
